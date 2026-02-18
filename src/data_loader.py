@@ -1,10 +1,14 @@
+from pathlib import Path
 import pandas as pd
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data"
+
 def load_data():
-    clientes = pd.read_excel("data/clientes.xlsx")
-    productos = pd.read_excel("data/productos.xlsx")
-    ventas = pd.read_excel("data/ventas.xlsx")
-    detalle = pd.read_excel("data/detalle_ventas.xlsx")
+    clientes = pd.read_excel(DATA_DIR / "clientes.xlsx")
+    productos = pd.read_excel(DATA_DIR / "productos.xlsx")
+    ventas = pd.read_excel(DATA_DIR / "ventas.xlsx")
+    detalle = pd.read_excel(DATA_DIR / "detalle_ventas.xlsx")
 
     df = (
         detalle.merge(productos, on="id_producto", how="left")
