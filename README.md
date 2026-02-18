@@ -10,9 +10,7 @@ Full-Stack Developer - Machine Learning Oriented
 ## Project Overview
 
 This project implements an end-to-end Machine Learning pipeline to predict the total sales amount of a retail transaction line using structured tabular data.
-
 The model learns relationships between quantity, unit price, and product category to estimate transaction value and support data-driven business decisions.
-
 This repository demonstrates production-style ML practices including data preprocessing, model comparison, pipelines, evaluation metrics, and reproducible experimentation.
 
 ## Machine Learning Features Demonstrated
@@ -30,74 +28,63 @@ This repository demonstrates production-style ML practices including data prepro
 ## Dataset Description
 
 The dataset simulates a retail sales system with relational structure:
-
 Customers
-
 Products (with category)
-
 Sales transactions
-
 Transaction details
-
 Target variable:
-
 Total Amount = Quantity × Unit Price
-
 Features used:
-
 Quantity
-
 Unit Price
-
 Product Category
+
+## Installation
+
+Clone repository:
+git clone https://github.com/YOUR_USERNAME/sales-amount-prediction-ml-pipeline.git
+cd sales-amount-prediction-ml-pipeline
+
+Create virtual environment:
+python -m venv venv
+source venv/bin/activate
+
+Install dependencies:
+pip install -r requirements.txt
+
+## Usage
+
+unning the Full ML Pipeline
+Run the complete workflow (training, evaluation, and prediction):
+python run_pipeline.py
+This script will:
+Load and preprocess data
+Train the model with cross-validation
+Save the best model
+Evaluate performance
+Generate a sample prediction
+
+## Running Individual Components
+
+### Train model only:
+python src/train.py
+
+### Evaluate trained model:
+python src/evaluate.py
+
+### Run prediction example:
+python src/predict.py
 
 ## Project Structure
 sales-amount-prediction-ml-pipeline/
 │
 ├── data/                # Raw datasets
-├── notebooks/           # Exploratory analysis and modeling
-├── src/                 # Reusable ML pipeline code
-├── models/              # Trained models
-├── figures/             # Generated visualizations
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
-
-## Installation
-
-Clone repository:
-
-git clone https://github.com/YOUR_USERNAME/sales-amount-prediction-ml-pipeline.git
-cd sales-amount-prediction-ml-pipeline
-
-
-Create virtual environment:
-
-python -m venv venv
-source venv/bin/activate
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-## Usage
-
-Run the notebook:
-
-notebooks/aurelion_sales_model.ipynb
-
-
-The pipeline will:
-
-Load and merge datasets
-
-Clean and transform features
-
-Train multiple regression models
-
-Evaluate performance
-
-Generate predictions
+├── notebooks/           # Exploratory analysis
+├── src/                 # ML pipeline modules
+├── models/              # Saved models
+├── run_pipeline.py      # End-to-end execution script
+├── requirements.txt
+└── README.md
 
 ## Results
 
@@ -109,15 +96,10 @@ Sales amount is primarily driven by price and quantity, while product category p
 ## Future Improvements
 
 Hyperparameter optimization with cross-validation
-
 Feature importance analysis
-
 Model persistence and loading
-
 API deployment with FastAPI
-
 Interactive dashboard with Streamlit
-
 MLOps pipeline integration
 
 ## Tech Stack
