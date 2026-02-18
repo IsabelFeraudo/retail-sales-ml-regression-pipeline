@@ -2,12 +2,12 @@
 End-to-end machine learning pipeline for retail sales amount prediction using tabular data, feature preprocessing, and model evaluation.
 
 Sales Amount Prediction — End-to-End Machine Learning Pipeline
-* Author
+## Author
 
 Isabel Feraudo
 Full-Stack Developer - Machine Learning Oriented
 
-* Project Overview
+## Project Overview
 
 This project implements an end-to-end Machine Learning pipeline to predict the total sales amount of a retail transaction line using structured tabular data.
 
@@ -15,7 +15,7 @@ The model learns relationships between quantity, unit price, and product categor
 
 This repository demonstrates production-style ML practices including data preprocessing, model comparison, pipelines, evaluation metrics, and reproducible experimentation.
 
-* Machine Learning Features Demonstrated
+## Machine Learning Features Demonstrated
 
 ✔ Data cleaning and feature engineering
 ✔ Tabular regression modeling
@@ -27,7 +27,7 @@ This repository demonstrates production-style ML practices including data prepro
 ✔ Reproducible workflow
 ✔ Model-ready structure for deployment
 
-* Dataset Description
+## Dataset Description
 
 The dataset simulates a retail sales system with relational structure:
 
@@ -62,7 +62,7 @@ sales-amount-prediction-ml-pipeline/
 ├── requirements.txt     # Python dependencies
 └── README.md            # Project documentation
 
-* Installation
+## Installation
 
 Clone repository:
 
@@ -80,7 +80,7 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-* Usage
+## Usage
 
 Run the notebook:
 
@@ -99,14 +99,14 @@ Evaluate performance
 
 Generate predictions
 
-* Results
+## Results
 
 Random Forest Regressor achieved the best predictive performance, capturing non-linear relationships between price, quantity, and category.
 
 Key insight:
 Sales amount is primarily driven by price and quantity, while product category provides additional predictive signal.
 
-* Future Improvements
+## Future Improvements
 
 Hyperparameter optimization with cross-validation
 
@@ -120,7 +120,7 @@ Interactive dashboard with Streamlit
 
 MLOps pipeline integration
 
-* Tech Stack
+## Tech Stack
 
 Python
 Pandas
@@ -129,6 +129,6 @@ Scikit-learn
 Matplotlib
 Seaborn
 
-* Portfolio Context
+## Portfolio Context
 
 This project is part of my Machine Learning portfolio focused on real-world business prediction problems using structured data and reproducible pipelines.
