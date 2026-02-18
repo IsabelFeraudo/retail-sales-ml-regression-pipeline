@@ -82,21 +82,26 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the notebook:
+### Run the notebook:
 
 notebooks/aurelion_sales_model.ipynb
+
+### Run training
+python src/train.py
+
+### Evaluate model
+python src/evaluate.py
+
+### Run prediction example
+python src/predict.py
 
 
 The pipeline will:
 
 Load and merge datasets
-
 Clean and transform features
-
 Train multiple regression models
-
 Evaluate performance
-
 Generate predictions
 
 ## Results
@@ -109,15 +114,10 @@ Sales amount is primarily driven by price and quantity, while product category p
 ## Future Improvements
 
 Hyperparameter optimization with cross-validation
-
 Feature importance analysis
-
 Model persistence and loading
-
 API deployment with FastAPI
-
 Interactive dashboard with Streamlit
-
 MLOps pipeline integration
 
 ## Tech Stack
