@@ -51,7 +51,7 @@ Unit Price
 
 Product Category
 
-Project Structure
+## Project Structure
 sales-amount-prediction-ml-pipeline/
 │
 ├── data/                # Raw datasets
