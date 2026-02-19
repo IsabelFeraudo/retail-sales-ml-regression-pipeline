@@ -1,13 +1,12 @@
 import numpy as np
-from sklearn.metrics import mean_absolute_error, mean_squared_error
 import joblib
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 from src.data_loader import load_data
-
 
 def evaluate_model():
     df = load_data()
 
-    X = df[["cantidad"]]
+    X = df[["cantidad", "precio_unitario", "categoria"]]
     y = df["importe"]
 
     model = joblib.load("models/sales_model.joblib")

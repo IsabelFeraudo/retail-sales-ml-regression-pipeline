@@ -52,9 +52,6 @@ def load_data() -> pd.DataFrame:
         .merge(clientes, on="id_cliente", how="left")
     )
 
-    print("COLUMNAS DEL DATAFRAME:")
-    print(df.columns.tolist())
-
     df = _resolve_price_column(df)
 
     df["precio_unitario"] = pd.to_numeric(df["precio_unitario"], errors="coerce")
