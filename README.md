@@ -1,4 +1,4 @@
-# retail-sales-ml-regression-pipeline
+# Retail-sales Machine Learning regression pipeline
 End-to-end machine learning pipeline for retail sales amount prediction using tabular data, feature preprocessing, and model evaluation.
 
 Sales Amount Prediction — End-to-End Machine Learning Pipeline
